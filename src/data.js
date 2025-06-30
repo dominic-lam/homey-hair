@@ -2,13 +2,13 @@ export const PRODUCTS = {
     "薄荷清涼角質淨化洗髮水": {
         name: "薄荷清涼角質淨化洗髮水 (Minty Equalizing Cleanser)",
         image: import.meta.env.BASE_URL + "images/minty_cleanser.jpg",
-        desc: "主打去角質油脂，薄荷清涼感，軟化角質堆積，頭皮爽到飛起。適合偏油、有屑、易焗促嘅頭皮。",
+        desc: "主打去角質油脂，薄荷清涼感，軟化角質堆積，頭皮爽到飛起。適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油",
         usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗。每星期可用1-2次深層清潔。",
     },
     "膠束薄荷無矽洗髮水": {
         name: "膠束薄荷無矽洗髮水 (Dirt Magnet Micellar Shampoo)",
         image: import.meta.env.BASE_URL + "images/dirt_shampoo.jpg",
-        desc: "用MICELLAR技術，極溫和又可以深層清走污垢雜質，仲有薄荷成分幫你淨化頭皮、去味兼去油。",
+        desc: "用MICELLAR技術，極溫和又可以深層清走污垢雜質，仲有薄荷成分幫你淨化頭皮、去味兼去油。\n---\n\t•\t平衡頭皮pH值\n\t•\t含維生素B5及薄荷，清爽舒緩",
         usage: "取適量於濕髮頭皮搓勻，輕柔按摩60秒，沖洗乾淨。可每日使用。",
     },
     "茶樹防脫止痕洗髮液": {
@@ -20,7 +20,7 @@ export const PRODUCTS = {
     "燕麥春菊抗炎止癢洗髮水": {
         name: "燕麥春菊抗炎止癢洗髮水 (Scalp Relief Shampoo)",
         image: import.meta.env.BASE_URL + "images/scalp_relief_shampoo.jpg",
-        desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5E，針對舒緩泛紅、止癢、減少頭皮屑及發炎反應。",
+        desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5 & E，針對舒緩泛紅、止癢、減少頭皮屑及發炎反應。\n---\n\t•\tOCT & ZPT 抑炎配方",
         usage: "用於濕髮頭皮，輕柔按摩後沖洗。如頭皮敏感發作，可天天用。",
     },
 };
@@ -91,28 +91,28 @@ export const ADVANCED_PRODUCTS = {
         usage: "洗髮後將護髮素均勻塗抹於髮中至髮尾，靜置1-3分鐘後用清水徹底沖洗"
     },
 
-    // "理底打底水": {
-    //     name: "理底打底水 (Grooming Tonic)",
-    //     image: [
-    //         import.meta.env.BASE_URL + "images/grooming_tonic_1.jpg",
-    //         // add more if you have: import.meta.env.BASE_URL + "images/grooming_tonic_2.jpg"
-    //     ],
-    //     shortline: "髮型容易扁？用理底打，立體豐盈，一吹即現！",
-    //     desc: "專為亞洲幼細、易塌髮質設計的萬能打底水。清爽木炭配方，增厚髮根，提升髮型層次感，全天持久定型，造型易控無油感。",
-    //     features: [
-    //         "打底增厚，令髮絲更有立體感",
-    //         "幫助髮型持久定型，防止一出門就扁塌",
-    //         "清爽木炭配方，不油不黏，易於清洗",
-    //         "減少毛躁、令髮型更易打理",
-    //         "香港手工製造，信心保證"
-    //     ],
-    //     suitable: [
-    //         "幼細／欠支撐力／扁塌／易塌髮質人士",
-    //         "需要造型打底（如Pompadour、油頭、紳士頭等）",
-    //         "追求清爽自然、不油膩造型效果者"
-    //     ],
-    //     usage: "洗髮後，於濕髮取3-5ml打底水均勻搽於頭髮，用吹風機（配捲梳）吹乾造型，即時豐盈增厚。可單用或搭配造型膏/蠟提升持久層次感"
-    // },
+    "理底打底水": {
+        name: "理底打底水 (Grooming Tonic)",
+        image: [
+            import.meta.env.BASE_URL + "images/grooming_tonic_1.jpg",
+            // add more if you have: import.meta.env.BASE_URL + "images/grooming_tonic_2.jpg"
+        ],
+        shortline: "髮型容易扁？用理底打，立體豐盈，一吹即現！",
+        desc: "專為亞洲幼細、易塌髮質設計的萬能打底水。清爽木炭配方，增厚髮根，提升髮型層次感，全天持久定型，造型易控無油感。",
+        features: [
+            "打底增厚，令髮絲更有立體感",
+            "幫助髮型持久定型，防止一出門就扁塌",
+            "清爽木炭配方，不油不黏，易於清洗",
+            "減少毛躁、令髮型更易打理",
+            "香港手工製造，信心保證"
+        ],
+        suitable: [
+            "幼細／欠支撐力／扁塌／易塌髮質人士",
+            "需要造型打底（如Pompadour、油頭、紳士頭等）",
+            "追求清爽自然、不油膩造型效果者"
+        ],
+        usage: "洗髮後，於濕髮取3-5ml打底水均勻搽於頭髮，用吹風機（配捲梳）吹乾造型，即時豐盈增厚。可單用或搭配造型膏/蠟提升持久層次感"
+    },
 };
 
 export const QUESTIONS = [

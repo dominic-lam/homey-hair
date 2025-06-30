@@ -1,7 +1,19 @@
+/**
+ * @file ProductCard.jsx
+ * @description
+ *   Responsive card component for displaying a single shampoo product.
+ *   Shows image, name, English name, description (supports multi-line), usage, and a copy-to-clipboard button.
+ *   Used throughout app for all shampoo (not advanced) products.
+ */
+
 import React, { useState } from "react";
 import { PRODUCTS } from "./data";
 
-// Responsive clipboard icon
+/**
+ * Small clipboard icon (✅ when copied, 📑 by default).
+ * @param {Object} props
+ * @param {boolean} props.copied - Whether the text has just been copied.
+ */
 const ClipboardIcon = ({ copied }) => (
     <span
         style={{
@@ -15,17 +27,28 @@ const ClipboardIcon = ({ copied }) => (
         role="img"
         aria-label="Copy"
     >
-    {copied ? "✅" : "📑"}
-  </span>
+        {copied ? "✅" : "📑"}
+    </span>
 );
 
+/**
+ * Card component for a single shampoo product.
+ *
+ * @param {Object} props
+ * @param {string} props.name - Product key (Chinese name, matches PRODUCTS keys)
+ * @returns {JSX.Element|null}
+ */
 export default function ProductCard({ name }) {
+    // Get product object from PRODUCTS map.
     const prod = PRODUCTS[name];
     const [copied, setCopied] = useState(false);
 
+    // Guard: If product is missing (bad key), don't render anything.
     if (!prod) return null;
 
-    // Copy Chinese product name to clipboard
+    /**
+     * Copy the product's Chinese name to clipboard, show "copied" toast for 1s.
+     */
     const handleCopy = () => {
         navigator.clipboard.writeText(name);
         setCopied(true);
@@ -48,7 +71,7 @@ export default function ProductCard({ name }) {
                 overflow: "hidden",
             }}
         >
-            {/* Responsive square image (aspect-ratio) */}
+            {/* Product image (responsive square, aspect-ratio 1:1) */}
             {prod.image && (
                 <div
                     style={{
@@ -74,7 +97,7 @@ export default function ProductCard({ name }) {
                 </div>
             )}
 
-            {/* Copied Toast */}
+            {/* "Copied!" toast overlay, top-right */}
             {copied && (
                 <div
                     style={{
@@ -98,9 +121,12 @@ export default function ProductCard({ name }) {
                 </div>
             )}
 
+            {/* Main card content */}
             <div style={{ padding: "clamp(15px,4vw,28px) clamp(12px,5vw,24px) clamp(12px,4vw,18px) clamp(12px,5vw,24px)" }}>
+                {/* Title + English name + Copy button row */}
                 <div style={{ display: "flex", alignItems: "flex-start", marginBottom: 12 }}>
                     <div style={{ flex: 1 }}>
+                        {/* Chinese name, bold */}
                         <div style={{
                             fontWeight: 700,
                             fontSize: "clamp(18px, 5vw, 22px)",
@@ -109,6 +135,7 @@ export default function ProductCard({ name }) {
                         }}>
                             {prod.name.replace(/\s*\(.*?\)/, "")}
                         </div>
+                        {/* English/extra name (in parentheses) */}
                         <div
                             style={{
                                 color: "var(--brand-en)",
@@ -122,7 +149,7 @@ export default function ProductCard({ name }) {
                             {prod.name.match(/\(.*?\)/)?.[0]}
                         </div>
                     </div>
-                    {/* Icon-only copy button */}
+                    {/* Clipboard copy button (icon only) */}
                     <button
                         onClick={handleCopy}
                         style={{
@@ -142,15 +169,20 @@ export default function ProductCard({ name }) {
                     </button>
                 </div>
 
+                {/* Description (supports multi-line with \n) */}
                 <div style={{
                     fontSize: "clamp(15px, 4vw, 16.5px)",
                     color: "var(--brand-text)",
                     marginBottom: 14,
                     lineHeight: 1.7
                 }}>
-                    {prod.desc}
+                    {/* Render desc with support for \n line breaks */}
+                    {prod.desc.split('\n').map((line, idx) => (
+                        <div key={idx}>{line}</div>
+                    ))}
                 </div>
 
+                {/* Usage instructions (highlighted pill style) */}
                 <div
                     style={{
                         background: "var(--brand-accent)",
@@ -166,10 +198,10 @@ export default function ProductCard({ name }) {
                         lineHeight: 1.8,
                     }}
                 >
-          <span>
-            <span style={{ fontWeight: 800, marginRight: 4 }}>🧴用法：</span>
-              {prod.usage}
-          </span>
+                    <span>
+                        <span style={{ fontWeight: 800, marginRight: 4 }}>🧴用法：</span>
+                        {prod.usage}
+                    </span>
                 </div>
             </div>
         </div>
