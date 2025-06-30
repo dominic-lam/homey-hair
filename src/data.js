@@ -1,25 +1,25 @@
 export const PRODUCTS = {
     "薄荷清涼角質淨化洗髮水": {
         name: "薄荷清涼角質淨化洗髮水 (Minty Equalizing Cleanser)",
-        image: "/images/minty_cleanser.jpg",
+        image: import.meta.env.BASE_URL + "images/minty_cleanser.jpg",
         desc: "主打去角質油脂，薄荷清涼感，軟化角質堆積，頭皮爽到飛起。適合偏油、有屑、易焗促嘅頭皮。",
         usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗。每星期可用1-2次深層清潔。",
     },
     "膠束薄荷無矽洗髮水": {
         name: "膠束薄荷無矽洗髮水 (Dirt Magnet Micellar Shampoo)",
-        image: "/images/dirt_shampoo.jpg",
+        image: import.meta.env.BASE_URL + "images/dirt_shampoo.jpg",
         desc: "用MICELLAR技術，極溫和又可以深層清走污垢雜質，仲有薄荷成分幫你淨化頭皮、去味兼去油。",
         usage: "取適量於濕髮頭皮搓勻，輕柔按摩60秒，沖洗乾淨。可每日使用。",
     },
     "茶樹防脫止痕洗髮液": {
         name: "茶樹防脫止痕洗髮液 (Tea Tree Revive Shampoo)",
-        image: "/images/tea_tree_shampoo.jpg",
+        image: import.meta.env.BASE_URL + "images/tea_tree_shampoo.jpg",
         desc: "含有茶樹、艾葉、何首烏成分，舒緩敏感、減少脫髮、抗氧化同時養髮根。特別適合有脫髮、頭皮痕癢、乾性頭皮人士。",
         usage: "濕髮後搓勻於頭皮，輕輕按摩再沖洗。每日或隔日用。",
     },
     "燕麥春菊抗炎止癢洗髮水": {
         name: "燕麥春菊抗炎止癢洗髮水 (Scalp Relief Shampoo)",
-        image: "/images/scalp_relief_shampoo.jpg",
+        image: import.meta.env.BASE_URL + "images/scalp_relief_shampoo.jpg",
         desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5E，針對舒緩泛紅、止癢、減少頭皮屑及發炎反應。",
         usage: "用於濕髮頭皮，輕柔按摩後沖洗。如頭皮敏感發作，可天天用。",
     },
@@ -31,7 +31,10 @@ export const PRODUCTS = {
 export const ADVANCED_PRODUCTS = {
     "尤加利抗炎冰爽活髮精華": {
         name: "尤加利抗炎冰爽活髮精華 (Soothing Hydrator)",
-        image: ["/images/soothing_hydrator_1.jpg", "/images/soothing_hydrator_2.jpg"], // add more images as needed
+        image: [
+            import.meta.env.BASE_URL + "images/soothing_hydrator_1.jpg",
+            import.meta.env.BASE_URL + "images/soothing_hydrator_2.jpg"
+        ],
         shortline: "每日滴活髮精華，激活新生髮根！",
         desc: "結合5重中西植萃（尤加利、密羅木、馬齒莧、薄荷、牛蒡），針對敏感、乾燥、發紅、痕癢頭皮，抗炎、抗菌、舒緩同時促進頭髮健康生長。",
         features: [
@@ -50,7 +53,10 @@ export const ADVANCED_PRODUCTS = {
 
     "胡桃去角質磨砂膏": {
         name: "胡桃去角質磨砂膏 (Walnutty Dirt Exfoliator)",
-        image: ["/images/walnut_scrub_1.jpg", "/images/walnut_scrub_2.jpg"], // add more images as needed
+        image: [
+            import.meta.env.BASE_URL + "images/walnut_scrub_1.jpg",
+            import.meta.env.BASE_URL + "images/walnut_scrub_2.jpg"
+        ],
         shortline: "頭皮堵塞？每週磨砂，毛囊即刻透氣！",
         desc: "天然胡桃核磨砂顆粒，溫和去除頭皮表面多餘角質及堆積油脂，有效疏通毛囊，減少頭皮屑、頭油及悶塞問題。",
         features: [
@@ -69,7 +75,7 @@ export const ADVANCED_PRODUCTS = {
 
     "護髮素": {
         name: "護髮素 (Conditioner)",
-        image: ["/images/conditioner.jpg"], // add more images as needed
+        image: [import.meta.env.BASE_URL + "images/conditioner.jpg"],
         shortline: "頭髮毛躁打結？用護髮素順滑有光澤！",
         desc: "含水解蛋白、椰子油等多種植物精華，修護受損髮芯、鎖水保濕，令頭髮順滑易梳、自然亮澤。",
         features: [
