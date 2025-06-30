@@ -89,7 +89,30 @@ export const ADVANCED_PRODUCTS = {
             "需要提升頭髮光澤、柔順、抗毛躁人士"
         ],
         usage: "洗髮後將護髮素均勻塗抹於髮中至髮尾，靜置1-3分鐘後用清水徹底沖洗"
-    }
+    },
+
+    // "理底打底水": {
+    //     name: "理底打底水 (Grooming Tonic)",
+    //     image: [
+    //         import.meta.env.BASE_URL + "images/grooming_tonic_1.jpg",
+    //         // add more if you have: import.meta.env.BASE_URL + "images/grooming_tonic_2.jpg"
+    //     ],
+    //     shortline: "髮型容易扁？用理底打，立體豐盈，一吹即現！",
+    //     desc: "專為亞洲幼細、易塌髮質設計的萬能打底水。清爽木炭配方，增厚髮根，提升髮型層次感，全天持久定型，造型易控無油感。",
+    //     features: [
+    //         "打底增厚，令髮絲更有立體感",
+    //         "幫助髮型持久定型，防止一出門就扁塌",
+    //         "清爽木炭配方，不油不黏，易於清洗",
+    //         "減少毛躁、令髮型更易打理",
+    //         "香港手工製造，信心保證"
+    //     ],
+    //     suitable: [
+    //         "幼細／欠支撐力／扁塌／易塌髮質人士",
+    //         "需要造型打底（如Pompadour、油頭、紳士頭等）",
+    //         "追求清爽自然、不油膩造型效果者"
+    //     ],
+    //     usage: "洗髮後，於濕髮取3-5ml打底水均勻搽於頭髮，用吹風機（配捲梳）吹乾造型，即時豐盈增厚。可單用或搭配造型膏/蠟提升持久層次感"
+    // },
 };
 
 export const QUESTIONS = [

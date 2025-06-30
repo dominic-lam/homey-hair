@@ -4,7 +4,7 @@ import React from "react";
 export default function Question({ question, onSelect, selected }) {
     return (
         <div className="question-block" style={{ marginBottom: 32 }}>
-            <div style={{ fontWeight: "bold", marginBottom: 12 }}>{question.text}</div>
+            <div style={{ fontWeight: "bold", marginBottom: 12, color:"#000000" }}>{question.text}</div>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                 {question.options.map((opt) => (
                     <button
