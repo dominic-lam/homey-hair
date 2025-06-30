@@ -1,42 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/**
+ * @file App.css
+ * @description
+ *   Global styles and CSS variables for the Hair Product Guide app.
+ *   - Sets up the app’s color palette (brand colors, backgrounds, accents).
+ *   - Provides basic layout styling for #root and body.
+ *   - Applies font stack for multilingual support.
+ *   - Controls overall look & feel and makes theme changes easy via variables.
+ */
+
+/* CSS variables: single source of truth for all brand colors and themes */
+:root {
+  --color-white: #ffffff;
+  --color-bg: #ffffff;        /* Alternate background (not currently used as main bg) */
+  --brand-green: #16966b;     /* Primary accent color */
+  --brand-green-light: #67c9a6;
+  --brand-bg: #f6fcfa;        /* Main page background color (what you see behind the menu) */
+  --brand-card: #fff;         /* Card backgrounds */
+  --brand-card-shadow: 0 8px 36px 0 rgba(60, 60, 60, 0.20), 0 1.5px 6px rgba(60, 160, 120, 0.09);
+  --brand-accent: #e8f7f1;    /* Button, highlight backgrounds */
+  --brand-title: #339966;     /* Page titles/headings */
+  --brand-grey: #666;         /* Secondary/tertiary text */
+  --brand-blue: #21896b;
+  --brand-text: #222;         /* Default text color */
+  --brand-en: #305459;        /* Used for English text blocks, if needed */
+  --brand-toast: #16966b;     /* Toast/notification background */
+  --brand-toast-shadow: 0 4px 18px rgba(60,160,120,0.10);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Sets up main body styles: background, removes default margin, and font family */
+body {
+  background: #ffffff;   /* The color you see behind all cards/menus */
+  margin: 0;                     /* Remove ugly default browser margins */
+  font-family: 'Inter', 'PingFang TC', 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif;
+  /* Nice stack for multilingual support (English + Chinese) */
 }
