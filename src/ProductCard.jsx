@@ -101,7 +101,12 @@ export default function ProductCard({ name }) {
             <div style={{ padding: "clamp(15px,4vw,28px) clamp(12px,5vw,24px) clamp(12px,4vw,18px) clamp(12px,5vw,24px)" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", marginBottom: 12 }}>
                     <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 700, fontSize: "clamp(18px, 5vw, 22px)", lineHeight: 1.15 }}>
+                        <div style={{
+                            fontWeight: 700,
+                            fontSize: "clamp(18px, 5vw, 22px)",
+                            lineHeight: 1.15,
+                            color: "#000000"
+                        }}>
                             {prod.name.replace(/\s*\(.*?\)/, "")}
                         </div>
                         <div

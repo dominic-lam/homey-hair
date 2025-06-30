@@ -78,7 +78,9 @@ export default function Result({
                 {result.products.map((prod, idx) => (
                     <li key={idx} style={{
                         marginBottom: 4,
-                        listStyle: "disc inside"
+                        listStyle: "none",
+                        fontWeight: 700,            // <-- bold!
+                        color: "#111",
                     }}>
                         {prod}
                     </li>

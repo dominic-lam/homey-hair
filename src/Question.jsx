@@ -20,6 +20,7 @@ export default function Question({ question, onSelect, selected }) {
                             fontSize: 18,
                             width: "100%",
                             transition: "all 0.15s",
+                            color: selected === opt.value ? "#16966b" : "#1d3731",
                         }}
                     >
                         {opt.label}
