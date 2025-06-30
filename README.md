@@ -2,6 +2,13 @@
 
 A user-friendly React web app to help people find the best haircare products for their scalp and needs.
 
+## Setup
+```bash
+git clone git@github.com:dominic-lam/homey-hair.git
+
+```
+
+
 ## Features
 
 - Simple survey (3 questions, 27 outcomes)
