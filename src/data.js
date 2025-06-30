@@ -23,39 +23,67 @@ export const PRODUCTS = {
         desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5E，針對舒緩泛紅、止癢、減少頭皮屑及發炎反應。",
         usage: "用於濕髮頭皮，輕柔按摩後沖洗。如頭皮敏感發作，可天天用。",
     },
+};
 
-    // ------- Example advanced products: -------
-    "胡桃去角質磨砂膏": {
-        name: "胡桃去角質磨砂膏 (Walnutty Dirt Exfoliator)",
-        image: "/images/walnut_scrub.jpg",
-        desc: "天然胡桃殼微粒，溫和去除頭皮死皮、殘留油脂，促進頭皮呼吸。",
-        usage: "每星期1-2次，洗髮前取適量搽上濕頭皮，打圈按摩1分鐘後沖走，再進行洗髮。",
-    },
+/**
+ * Advanced hair/scalp care products info (for Advanced Care page)
+ */
+export const ADVANCED_PRODUCTS = {
     "尤加利抗炎冰爽活髮精華": {
         name: "尤加利抗炎冰爽活髮精華 (Soothing Hydrator)",
-        image: "/images/eucalyptus_hydrator.jpg",
-        desc: "尤加利精華，促進血液循環、抗菌抗炎，減少敏感不適，令頭皮保持健康。",
-        usage: "洗髮後滴或噴於頭皮，輕輕按摩至吸收，無需沖洗。",
+        image: ["/images/soothing_hydrator_1.jpg", "/images/soothing_hydrator_2.jpg"], // add more images as needed
+        shortline: "每日滴活髮精華，激活新生髮根！",
+        desc: "結合5重中西植萃（尤加利、密羅木、馬齒莧、薄荷、牛蒡），針對敏感、乾燥、發紅、痕癢頭皮，抗炎、抗菌、舒緩同時促進頭髮健康生長。",
+        features: [
+            "抗炎抗菌，止癢舒緩",
+            "保濕修護，預防頭皮乾燥",
+            "活髮強根，促進毛囊健康",
+            "即時降溫冰爽，減輕不適"
+        ],
+        suitable: [
+            "任何頭皮敏感、乾燥、易紅易癢人士",
+            "頭皮經常發炎、痕癢、壓力大、換季不穩",
+            "配合各款洗髮水日常使用，長效保養"
+        ],
+        usage: "每次洗頭後，將精華直接滴/噴在頭皮分界線，再以指腹輕輕按摩至吸收，無需沖水"
     },
-    "B5滋養活髮根精華": {
-        name: "B5滋養活髮根精華 (Follicles Activator)",
-        image: "/images/b5_activator.jpg",
-        desc: "高濃度B5精華，深層滋養頭皮，強化髮根，減少掉髮。",
-        usage: "洗髮後適量塗於頭皮，輕柔按摩至吸收，無需沖水。",
+
+    "胡桃去角質磨砂膏": {
+        name: "胡桃去角質磨砂膏 (Walnutty Dirt Exfoliator)",
+        image: ["/images/walnut_scrub_1.jpg", "/images/walnut_scrub_2.jpg"], // add more images as needed
+        shortline: "頭皮堵塞？每週磨砂，毛囊即刻透氣！",
+        desc: "天然胡桃核磨砂顆粒，溫和去除頭皮表面多餘角質及堆積油脂，有效疏通毛囊，減少頭皮屑、頭油及悶塞問題。",
+        features: [
+            "去角質、去死皮、深層清潔",
+            "疏通毛囊，預防毛囊堵塞",
+            "改善頭皮油脂平衡，減少異味",
+            "使用後頭皮清爽、舒適"
+        ],
+        suitable: [
+            "油性／混合型頭皮",
+            "頭皮容易積聚油脂、死皮、有屑、悶塞人士",
+            "需要深層清潔、想提升頭皮呼吸感"
+        ],
+        usage: "每週1-2次，洗頭前先以濕髮狀態，取適量磨砂膏均勻按摩頭皮1-3分鐘，靜待5-10分鐘後沖洗，再用洗髮水"
     },
+
     "護髮素": {
-        name: "護髮素 (Anti Frizzy Conditioner)",
-        image: "/images/conditioner.jpg",
-        desc: "針對毛躁髮質，有效鎖水順滑，防止斷裂分叉。",
-        usage: "洗髮後取適量塗於髮尾，停留1-2分鐘後沖洗。",
-    },
-    "卸淨頭皮雜質水": {
-        name: "卸淨頭皮雜質水 (Micellar Water)",
-        image: "/images/micellar_water.jpg",
-        desc: "micellar卸妝技術，深層清潔頭皮油脂雜質，令頭皮乾淨無負擔。",
-        usage: "頭皮特別污糟或用造型品後，可用棉花蘸取直接抹頭皮，再用洗頭水。",
+        name: "護髮素 (Conditioner)",
+        image: ["/images/conditioner.jpg"], // add more images as needed
+        shortline: "頭髮毛躁打結？用護髮素順滑有光澤！",
+        desc: "含水解蛋白、椰子油等多種植物精華，修護受損髮芯、鎖水保濕，令頭髮順滑易梳、自然亮澤。",
+        features: [
+            "深層修護受損髮絲",
+            "快速鎖水，防止毛躁及分叉",
+            "增強髮絲彈性，減少斷裂",
+            "改善打結，梳頭更順"
+        ],
+        suitable: [
+            "各種髮質（特別係乾旱、受損、染燙、易打結）",
+            "需要提升頭髮光澤、柔順、抗毛躁人士"
+        ],
+        usage: "洗髮後將護髮素均勻塗抹於髮中至髮尾，靜置1-3分鐘後用清水徹底沖洗"
     }
-    // ...add more products as you wish!
 };
 
 export const QUESTIONS = [

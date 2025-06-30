@@ -11,6 +11,8 @@ import React, { useState } from "react";
 import Survey from "./Survey";
 import HomeMenu from "./HomeMenu";
 import ShampooList from "./ShampooList";
+import WashSteps from "./WashSteps";
+import AdvancedProductsList from "./AdvancedProductsList"; // <-- Import the real Advanced Care page
 import "./App.css";
 
 /**
@@ -22,7 +24,7 @@ import "./App.css";
  * @returns {JSX.Element} The rendered Hair Product Guide app.
  */
 export default function App() {
-    // Track which main page is being displayed ("home", "survey", "steps", "advanced", etc.)
+    // Track which main page is being displayed ("home", "survey", "steps", "shampooList", "advanced", etc.)
     const [page, setPage] = useState("home");
 
     return (
@@ -62,37 +64,24 @@ export default function App() {
                 {page === "survey" && (
                     <Survey
                         onBack={() => setPage("home")}
-                        onSeeAllShampoo={() => setPage("steps")}
+                        onSeeAllShampoo={() => setPage("shampooList")}
                         onGoHome={() => setPage("home")}
                     />
                 )}
 
-                {/* SHAMPOO STEPS: Placeholder for now */}
-                {page === "steps" && (
+                {/* SHAMPOO LIST: Lists all shampoo products */}
+                {page === "shampooList" && (
                     <ShampooList onGoHome={() => setPage("home")} />
                 )}
 
-                {/* ADVANCED CARE: Placeholder for now */}
+                {/* WASH STEPS: Proper hair washing steps/routine */}
+                {page === "steps" && (
+                    <WashSteps onGoHome={() => setPage("home")} />
+                )}
+
+                {/* ADVANCED CARE: Shows all advanced hair/scalp care products */}
                 {page === "advanced" && (
-                    <div style={{ width: "100%" }}>
-                        <button
-                            onClick={() => setPage("home")}
-                            style={{
-                                background: "none",
-                                border: "none",
-                                fontSize: 18,
-                                cursor: "pointer",
-                                color: "var(--color-accent, #D6ACA6)",
-                                marginBottom: 16,
-                            }}
-                        >
-                            ← Back
-                        </button>
-                        <h2>Advanced Care</h2>
-                        <p>
-                            (This page is a placeholder. Add your advanced care tips or product routines here!)
-                        </p>
-                    </div>
+                    <AdvancedProductsList onGoHome={() => setPage("home")} />
                 )}
 
                 {/* TODO: Add more pages as you expand the app */}

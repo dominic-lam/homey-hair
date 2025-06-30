@@ -21,7 +21,7 @@ export default function HomeMenu({ onSelect }) {
         { key: "survey", label: "頭皮自測 → 選擇洗髮水" },
         { key: "advanced", label: "進階護理推薦" },
         { key: "steps", label: "正確洗頭步驟" },
-        { key: "products", label: "其他產品" },
+        // { key: "products", label: "其他產品" },
     ];
 
     return (
@@ -116,3 +116,5 @@ const btnStyle = {
     // Simple hover/focus effect for feedback
     // (Pro tip: add a :hover style in real CSS for best accessibility)
 };
+
+
