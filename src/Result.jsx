@@ -65,7 +65,8 @@ export default function Result({
             <div style={{
                 fontWeight: 600,
                 marginBottom: 8,
-                fontSize: "clamp(17px, 4vw, 19px)"
+                fontSize: "clamp(17px, 4vw, 19px)",
+                color: "#000000"
             }}>
                 建議產品：
             </div>
