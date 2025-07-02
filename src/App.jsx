@@ -74,6 +74,7 @@ export default function App() {
                     <ShampooList onGoHome={() => setPage("home")} />
                 )}
 
+
                 {/* WASH STEPS: Proper hair washing steps/routine */}
                 {page === "steps" && (
                     <WashSteps onGoHome={() => setPage("home")} />

@@ -1,36 +1,46 @@
 /**
  * @file Result.jsx
  * @description
- *   Displays the quiz result: title, recommended products, tips, and product details.
+ *   Displays the quiz result: title, recommended products (always adds advanced products), tips (+ extra tip).
  *   Includes "Restart", "See All Shampoo", and "Go Home" actions.
- *   Responsive and visually styled card, consistent with app layout.
  */
 
 import React from "react";
 import ProductCard from "./ProductCard";
+import AdvancedProductCard from "./AdvancedProductCard";
+import { ADVANCED_PRODUCTS } from "./data"; // Make sure this import path matches your structure
 
-/**
- * Result component for displaying the user's quiz result.
- *
- * @param {Object}   props
- * @param {Object}   props.result              - The result object (title, tips, products).
- * @param {Function} props.onRestart           - Callback to restart the quiz.
- * @param {Function} props.onSeeAllShampoo     - Callback to view all shampoo (triggers navigation).
- * @param {Function} props.onGoHome            - Callback to return to the main menu.
- * @returns {JSX.Element}
- */
+// Always add these advanced products after any shampoo recommendations
+const ADVANCED_KEYS = [
+    "胡桃去角質磨砂膏",
+    "尤加利抗炎冰爽活髮精華"
+];
+
+// Always add this extra tip at the end
+const EXTRA_TIP = "記得另外每週用磨砂膏進行1-2次深層清潔💆🏻‍♀️💆🏻‍♂️";
+
 export default function Result({
                                    result,
                                    onRestart,
                                    onSeeAllShampoo,
                                    onGoHome
                                }) {
-    // If result is missing or null, display a friendly error.
     if (!result) {
         return <div>搵唔到結果，請重新作答。</div>;
     }
 
-    // Main card container: consistent with app card layout
+    // 1. Add advanced products if not already present, avoid duplicates
+    const fullProducts = [
+        ...result.products,
+        ...ADVANCED_KEYS.filter(p => !result.products.includes(p))
+    ];
+
+    // 2. Add extra tip (if not present already)
+    let tips = result.tips.trim();
+    if (!tips.includes(EXTRA_TIP)) {
+        tips = tips.replace(/[。.]?$/, "。") + EXTRA_TIP;
+    }
+
     return (
         <div
             style={{
@@ -61,7 +71,7 @@ export default function Result({
                 {result.title}
             </h2>
 
-            {/* Recommended product names (bullet list) */}
+            {/* Recommended product names */}
             <div style={{
                 fontWeight: 600,
                 marginBottom: 8,
@@ -76,11 +86,11 @@ export default function Result({
                 paddingLeft: 0,
                 fontSize: "clamp(16px,4vw,18px)"
             }}>
-                {result.products.map((prod, idx) => (
+                {fullProducts.map((prod, idx) => (
                     <li key={idx} style={{
                         marginBottom: 4,
                         listStyle: "none",
-                        fontWeight: 700,            // <-- bold!
+                        fontWeight: 700,
                         color: "#111",
                     }}>
                         {prod}
@@ -98,7 +108,7 @@ export default function Result({
                     textAlign: "left"
                 }}
             >
-                {result.tips}
+                {tips}
             </div>
 
             {/* Restart quiz button */}
@@ -135,8 +145,15 @@ export default function Result({
                 >
                     產品詳情
                 </div>
-                {result.products.map((prod, idx) => (
-                    <ProductCard key={idx} name={prod} />
+                {/* Regular Product Cards */}
+                {fullProducts
+                    .filter(prod => !ADVANCED_KEYS.includes(prod))
+                    .map((prod, idx) => (
+                        <ProductCard key={idx} name={prod} />
+                    ))}
+                {/* Advanced Product Cards (always these two, always after the above) */}
+                {ADVANCED_KEYS.map((prod, idx) => (
+                    <AdvancedProductCard key={prod} product={ADVANCED_PRODUCTS[prod]} />
                 ))}
             </div>
 

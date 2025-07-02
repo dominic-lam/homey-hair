@@ -18,8 +18,9 @@ import React from "react";
 export default function HomeMenu({ onSelect }) {
     // Define the menu options (add/remove/edit here to change menu)
     const options = [
-        { key: "survey", label: "頭皮自測 → 選擇洗髮水" },
-        { key: "advanced", label: "進階護理推薦" },
+        { key: "survey", label: "入門用家(頭皮自測)" },
+        { key: "shampooList", label: "基本洗髮水"},
+        { key: "advanced", label: "進階頭髮護理推薦" },
         { key: "steps", label: "正確洗頭步驟" },
         // { key: "products", label: "其他產品" },
     ];
