@@ -3,8 +3,7 @@ export const PRODUCTS = {
         name: "薄荷清涼角質淨化洗髮水 (Minty Equalizing Cleanser)",
         image: import.meta.env.BASE_URL + "images/minty_cleanser.jpg",
         desc: "主打去角質頭皮屑，薄荷清涼感，軟化角質堆積，頭皮爽到飛起，易吸收生髮精，適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油",
-        usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗，可每日使用。" +
-            ".3",
+        usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗，可每日使用。",
     },
     "膠束薄荷無矽洗髮水": {
         name: "膠束薄荷無矽洗髮水 (Dirt Magnet Micellar Shampoo)",
