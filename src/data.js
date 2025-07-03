@@ -2,15 +2,15 @@ export const PRODUCTS = {
     "薄荷清涼角質淨化洗髮水": {
         name: "薄荷清涼角質淨化洗髮水 (Minty Equalizing Cleanser)",
         image: import.meta.env.BASE_URL + "images/minty_cleanser.jpg",
-        desc: "主打去角質油脂，薄荷清涼感，軟化角質堆積，頭皮爽到飛起。適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油",
-        usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗。" +
+        desc: "主打去角質頭皮屑，薄荷清涼感，軟化角質堆積，頭皮爽到飛起，易吸收生髮精，適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油",
+        usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗，可每日使用。" +
             ".3",
     },
     "膠束薄荷無矽洗髮水": {
         name: "膠束薄荷無矽洗髮水 (Dirt Magnet Micellar Shampoo)",
         image: import.meta.env.BASE_URL + "images/dirt_shampoo.jpg",
-        desc: "用MICELLAR技術，極溫和又可以深層清走污垢雜質，仲有薄荷成分幫你淨化頭皮、去味兼去油。\n---\n\t•\t平衡頭皮pH值\n\t•\t含維生素B5及薄荷，清爽舒緩",
-        usage: "取適量於濕髮頭皮搓勻，輕柔按摩60秒，沖洗乾淨。可每日使用。",
+        desc: "用MICELLAR技術，主要極溫和又可以深層清油脂污垢雜質，仲有薄荷成分幫你去頭油味兼清油脂。\n---\n\t•\t平衡頭皮pH值\n\t•\t含維生素B5及薄荷，清爽舒緩",
+        usage: "取適量於濕髮頭皮搓勻，輕柔按摩1-2分鐘，沖洗乾淨。",
     },
     "茶樹防脫止痕洗髮液": {
         name: "茶樹防脫止痕洗髮液 (Tea Tree Revive Shampoo)",
@@ -21,8 +21,8 @@ export const PRODUCTS = {
     "燕麥春菊抗炎止癢洗髮水": {
         name: "燕麥春菊抗炎止癢洗髮水 (Scalp Relief Shampoo)",
         image: import.meta.env.BASE_URL + "images/scalp_relief_shampoo.jpg",
-        desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5 & E，針對舒緩泛紅、止癢、減少頭皮屑及發炎反應。\n---\n\t•\tOCT & ZPT 抑炎配方",
-        usage: "用於濕髮頭皮，輕柔按摩後沖洗。如頭皮敏感發作，可天天用。",
+        desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5 & E，針對舒緩泛紅、止癢、減少頭皮屑皮脂炎及紅腫反應。\n---\n\t•\tOCT & ZPT 抑炎配方",
+        usage: "用於濕髮頭皮，輕柔按摩後沖洗。如頭皮敏感發作，每日或隔日用。",
     },
 };
 
@@ -49,7 +49,7 @@ export const ADVANCED_PRODUCTS = {
             "頭皮經常發炎、痕癢、壓力大、換季不穩",
             "配合各款洗髮水日常使用，長效保養"
         ],
-        usage: "每次洗頭後，將精華直接滴/噴在頭皮分界線，再以指腹輕輕按摩至吸收，無需沖水"
+        usage: "每次洗頭後，將精華直接滴/噴在頭皮分界線，再以指腹輕輕按摩至吸收，無需沖水，用后薄荷清涼感不油膩。"
     },
 
     "胡桃去角質磨砂膏": {
@@ -71,7 +71,7 @@ export const ADVANCED_PRODUCTS = {
             "頭皮容易積聚油脂、死皮、有屑、悶塞人士",
             "需要深層清潔、想提升頭皮呼吸感"
         ],
-        usage: "每週1-2次，洗頭前先以濕髮狀態，取適量磨砂膏均勻按摩頭皮1-3分鐘，靜待5-10分鐘後沖洗，再用洗髮水"
+        usage: "每週1-2次，洗頭前先以濕髮狀態，取適量磨砂膏均勻按摩頭皮1-3分鐘，靜待5-10分鐘後沖洗，再用洗髮水。建議：有效地洗頭皮，定期適度去角質有助於促進頭皮血液循環，加上定期嘅保養令到一個頭髮可以延續到6-7年係最理想成長期"
     },
 
     "護髮素": {
@@ -123,7 +123,7 @@ export const QUESTIONS = [
         options: [
             { value: "A", label: "完全唔油／乾爽" },
             { value: "B", label: "少少反光" },
-            { value: "C", label: "好油／一摸就油" },
+            { value: "C", label: "好油／發臭" },
         ],
     },
     {
@@ -132,7 +132,7 @@ export const QUESTIONS = [
         options: [
             { value: "A", label: "基本冇痕，冇頭皮屑" },
             { value: "B", label: "偶爾會痕，有少少屑" },
-            { value: "C", label: "成日痕或者好多屑" },
+            { value: "C", label: "成日都痕或者好多屑" },
         ],
     },
     {
@@ -141,7 +141,7 @@ export const QUESTIONS = [
         options: [
             { value: "A", label: "冇咩感覺，正常" },
             { value: "B", label: "偶爾有少少敏感／微紅／輕微刺痛" },
-            { value: "C", label: "成日紅／痕／一受刺激就唔舒服" },
+            { value: "C", label: "成日有頭瘡／紅／非常痕／刺激就唔舒服" },
         ],
     },
 ];
@@ -166,7 +166,7 @@ export const RESULT_MAP = {
     ABA: {
         title: "頭皮狀況：偶爾出油",
         products: ["薄荷清涼角質淨化洗髮水", "膠束薄荷無矽洗髮水"],
-        tips: "偶爾出油可間中用膠束薄荷無矽洗髮水，平時用薄荷清涼已經夠。",
+        tips: "偶爾出油可間中用膠束薄荷無矽洗髮水，天天用薄荷清涼角質淨化已經夠。",
     },
     ABB: {
         title: "頭皮狀況：偶爾油兼輕微敏感",
