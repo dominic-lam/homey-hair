@@ -2,7 +2,7 @@ export const PRODUCTS = {
     "薄荷清涼角質淨化洗髮水": {
         name: "薄荷清涼角質淨化洗髮水 (Minty Equalizing Cleanser)",
         image: import.meta.env.BASE_URL + "images/minty_cleanser.jpg",
-        desc: "主打去角質頭皮屑，薄荷清涼感，軟化角質堆積，頭皮爽到飛起，易吸收生髮精，適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油",
+        desc: "主打去角質頭皮屑，薄荷清涼感，軟化角質堆積，頭皮爽到飛起，易吸收生髮精，適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油\n\t•\t幫助細軟髮質增加蓬鬆感，提升髮量。",
         usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗，可每日使用。",
     },
     "膠束薄荷無矽洗髮水": {
@@ -14,13 +14,13 @@ export const PRODUCTS = {
     "茶樹防脫止痕洗髮液": {
         name: "茶樹防脫止痕洗髮液 (Tea Tree Revive Shampoo)",
         image: import.meta.env.BASE_URL + "images/tea_tree_shampoo.jpg",
-        desc: "含有茶樹、艾葉、何首烏成分，舒緩敏感、減少脫髮、抗氧化同時養髮根。特別適合有脫髮、頭皮痕癢、乾性頭皮人士。",
+        desc: "含有茶樹、艾葉、何首烏成分，舒緩敏感、減少脫髮、抗氧化同時養髮根。特別適合有脫髮、頭皮痕癢、乾性頭皮人士。\n---\n\t•\t幫助細軟髮質增加蓬鬆感，提升髮量。",
         usage: "濕髮後搓勻於頭皮，輕輕按摩再沖洗。每日或隔日用。",
     },
     "燕麥春菊抗炎止癢洗髮水": {
         name: "燕麥春菊抗炎止癢洗髮水 (Scalp Relief Shampoo)",
         image: import.meta.env.BASE_URL + "images/scalp_relief_shampoo.jpg",
-        desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5 & E，針對舒緩泛紅、止癢、減少頭皮屑皮脂炎及紅腫反應。\n---\n\t•\tOCT & ZPT 抑炎配方",
+        desc: "蘊含中藥成分：甘草根、白花春黃菊花、燕麥，配合生薑及維他命B5 & E，針對舒緩泛紅、止癢、減少頭皮屑皮脂炎及紅腫反應。\n---\n\t•\tOCT & ZPT 抑炎配方\n\t•\t為染髮後的頭髮提供保護，通常含有防褪色成分。",
         usage: "用於濕髮頭皮，輕柔按摩後沖洗。如頭皮敏感發作，每日或隔日用。",
     },
 };
