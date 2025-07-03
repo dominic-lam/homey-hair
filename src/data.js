@@ -2,13 +2,13 @@ export const PRODUCTS = {
     "薄荷清涼角質淨化洗髮水": {
         name: "薄荷清涼角質淨化洗髮水 (Minty Equalizing Cleanser)",
         image: import.meta.env.BASE_URL + "images/minty_cleanser.jpg",
-        desc: "主打去角質頭皮屑，薄荷清涼感，軟化角質堆積，頭皮爽到飛起，易吸收生髮精，適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油\n\t•\t幫助細軟髮質增加蓬鬆感，提升髮量。",
+        desc: "主打去角質頭皮屑，薄荷清涼感，軟化角質堆積，頭皮爽到飛起，易吸收生髮精，適合偏油、有屑、易焗促嘅頭皮。\n---\n\t•\t無矽配方\n\t•\t弱酸性配方，溫和不刺激\n\t•\t去頭皮屑，有效控油\n\t•\t幫助細軟髮質增加蓬鬆感，提升髮量。",
         usage: "濕髮後取適量搓勻於頭皮，按摩1-2分鐘後沖洗，可每日使用。",
     },
     "膠束薄荷無矽洗髮水": {
         name: "膠束薄荷無矽洗髮水 (Dirt Magnet Micellar Shampoo)",
         image: import.meta.env.BASE_URL + "images/dirt_shampoo.jpg",
-        desc: "用MICELLAR技術，主要極溫和又可以深層清油脂污垢雜質，仲有薄荷成分幫你去頭油味兼清油脂。\n---\n\t•\t平衡頭皮pH值\n\t•\t含維生素B5及薄荷，清爽舒緩",
+        desc: "用MICELLAR技術，主要極溫和又可以深層清油脂污垢雜質，仲有薄荷成分幫你去頭油味兼清油脂。\n---\n\t•\t無矽配方\n\t•\t平衡頭皮pH值\n\t•\t含維生素B5及薄荷，清爽舒緩",
         usage: "取適量於濕髮頭皮搓勻，輕柔按摩1-2分鐘，沖洗乾淨。",
     },
     "茶樹防脫止痕洗髮液": {
